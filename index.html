@@ -57,6 +57,15 @@ img { display: block; max-width: 100%; height: auto; border-radius: 6px; box-sha
 .olgular span { color: var(--soluk); }
 @media (min-width: 900px) { .olgular { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
+.gerek { padding-block: 5rem; }
+.gerek .kap { display: grid; gap: 2.5rem; }
+.gerek h2 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem); }
+.gruplar { display: grid; gap: 3rem; }
+@media (min-width: 900px) { .gruplar { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.grup h3 { font-size: clamp(1.5rem, 1.2rem + 0.8vw, 1.875rem); padding-bottom: 0.75rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--murekkep); }
+.grup dl { margin: 0; display: grid; gap: 1.25rem; }
+.grup dt { font-weight: 600; }
+.grup dd { margin: 0.25rem 0 0; color: var(--soluk); max-width: 46ch; }
 .katalog { padding-block: 5rem; }
 .katalog .kap { display: grid; gap: 3rem; }
 .katalog-bas { display: grid; gap: 0.75rem; max-width: 60ch; }
@@ -102,7 +111,7 @@ img { display: block; max-width: 100%; height: auto; border-radius: 6px; box-sha
     <div class="kap">
       <h1 id="baslik">BellaWera’nın sitesi için on hazır tasarım</h1>
       <p class="lead">Google profilinizde site adresinin yerinde Instagram duruyor. Bu tasarımlardan biri, randevuyu WhatsApp’a hazır mesajla getiren siteniz olabilir.</p>
-      <div class="eylem"><a class="btn" href="#tasarimlar">Tasarımlara bakın</a><a class="btn btn--acik" href="#nasil">Nasıl ilerleriz?</a></div>
+      <div class="eylem"><a class="btn" href="#tasarimlar">Tasarımlara bakın</a><a class="btn btn--acik" href="#neden-site">Site neden gerekli?</a></div>
     </div>
   </section>
 
@@ -110,10 +119,40 @@ img { display: block; max-width: 100%; height: auto; border-radius: 6px; box-sha
     <div class="kap">
       <h2 id="neden-baslik">Sizi arayan bulur; site olunca randevuya da dönüşür</h2>
       <ul class="olgular">
-        <li><b>Google’da 5,0 puan, 114 yorum</b><span>Profiliniz çok güçlü, ama ziyaretçiyi gönderecek bir site yok.</span></li>
-        <li><b>Ücretsiz detaylı analiz</b><span>Instagram’daki bu teklifiniz sitede de var; müşteri tek dokunuşla ister.</span></li>
-        <li><b>Hizmet, gün, saat yazılı mesaj</b><span>Müşteri seçer; WhatsApp’ınıza ne istediği yazılı olarak gelir.</span></li>
+        <li><b>Google’da 5,0 puan, 114 yorum, site yok</b></li>
+        <li><b>Ücretsiz analiz teklifiniz sitede de duruyor</b></li>
+        <li><b>Randevu mesajı hizmet, gün ve saatle gelir</b></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="gerek" id="neden-site" aria-labelledby="gerek-baslik">
+    <div class="kap">
+      <h2 id="gerek-baslik">Site neden gerekli?</h2>
+      <div class="gruplar">
+        <div class="grup">
+          <h3>Reklam vermeden bulunmak</h3>
+          <dl>
+            <div><dt>Google aramasında</dt><dd>“Lazer epilasyon Denizli” arayana Instagram nadiren çıkar.</dd></div>
+            <div><dt>Google Haritalar’da</dt><dd>Site alanınız bugün Instagram’a gidiyor.</dd></div>
+            <div><dt>Yapay zekâ cevaplarında</dt><dd>ChatGPT ve Gemini açık siteleri kaynak gösterir.</dd></div>
+          </dl>
+        </div>
+        <div class="grup">
+          <h3>Reklam verdiğinizde</h3>
+          <dl>
+            <div><dt>Instagram reklamı</dt><dd>Meta pikseli, sitede bakıp yazmayana reklamı yeniden gösterir.</dd></div>
+            <div><dt>Google reklamı</dt><dd>İyi açılış sayfası tıklama ücretini düşürebilir.</dd></div>
+          </dl>
+        </div>
+        <div class="grup">
+          <h3>Marka algısı</h3>
+          <dl>
+            <div><dt>Kendi adresiniz</dt><dd>Kartvizitte ve tabelada kurumsal durur.</dd></div>
+            <div><dt>Reklam bitince</dt><dd>Reklam durur, site çalışmaya devam eder.</dd></div>
+          </dl>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -185,6 +224,6 @@ img { display: block; max-width: 100%; height: auto; border-radius: 6px; box-sha
     </div>
   </section>
 </main>
-<footer class="alt"><div class="kap"><p>BellaWera Güzellik Merkezi, Merkezefendi/Denizli için hazırlandı. Ön tasarımlar arama motorlarına kapalıdır; fotoğraflar geçicidir. Çerez ve izleme kodu yok.</p></div></footer>
+<footer class="alt"><div class="kap"><p>BellaWera Güzellik Merkezi, Merkezefendi/Denizli için hazırlandı. Ön tasarımlar arama motorlarına kapalıdır; fotoğraflar geçicidir. Çerez ve izleme kodu yok; Meta pikseli isteğe bağlıdır, çerez onayıyla eklenir.</p></div></footer>
 </body>
 </html>
