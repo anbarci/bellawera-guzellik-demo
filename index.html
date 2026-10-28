@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BellaWera Güzellik Merkezi için Üç Site Tasarımı</title>
+<meta name="description" content="BellaWera Güzellik Merkezi için hazırlanmış üç web sitesi tasarımı: WhatsApp’a hazır randevu mesajı, çalışma saatleri, Google için doğru yapı. Birini seçin, fotoğraflarınızla yayına alalım.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="BellaWera için üç site tasarımı">
+<meta property="og:description" content="Birini seçin; fotoğraflarınız ve fiyatlarınızla yayına alalım, Google profilinize site adresi eklensin.">
+<meta property="og:url" content="https://anbarci.github.io/bellawera-guzellik-demo/">
+<meta property="og:image" content="https://anbarci.github.io/bellawera-guzellik-demo/img/takvim-masaustu.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23141210'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' text-anchor='middle' fill='%23D9AE55'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Golos+Text:wght@400;600&amp;display=swap">
+<style>
+/* Hallmark · shape: a sales sheet for one salon, three working designs · genre: editorial · theme: custom · job: hire · idea: "show BellaWera its own site three ways, each already working with its real facts" · vibe: "a designer’s pitch folder, plain and warm"
+ * paper: oklch(97% 0.01 80) · accent: oklch(22% 0.015 70) the brand black, gold on it · display: Marcellus · body: Golos Text · hero: the offer in one line · nav: none · footer: colophon line · imagery: screenshots of the three designs · signature: every design opens and works
+ * axes: light/roman-serif/warm · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: P, a catalogue argues little; the opening facts are the argument: 5,0 from 114 reviews, free analysis, no site */
+:root {
+  --kagit: oklch(97% 0.01 80); --yuzey: oklch(92% 0.035 80); --murekkep: oklch(22% 0.015 70); --soluk: oklch(40% 0.02 70); --cizgi: oklch(22% 0.015 70 / 0.18);
+  --vurgu: oklch(22% 0.015 70); --cizgi-acik: oklch(97% 0.01 80 / 0.2); --vurgu-ustu: oklch(84% 0.11 82); --odak: oklch(45% 0.1 70);
+  --bas: "Marcellus", Georgia, serif; --govde: "Golos Text", system-ui, sans-serif;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+body { margin: 0; background: var(--kagit); color: var(--murekkep); font: 400 1.0625rem/1.6 var(--govde); }
+h1, h2, h3 { margin: 0; font-family: var(--bas); font-weight: 400; line-height: 1.05; text-wrap: balance; overflow-wrap: break-word; min-width: 0; }
+p { margin: 0; text-wrap: pretty; }
+a { color: inherit; text-underline-offset: 0.2em; }
+img { display: block; max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 0 0 1px var(--cizgi); background: var(--yuzey); }
+:focus-visible { outline: 3px solid var(--odak); outline-offset: 3px; }
+.kap { max-width: 1240px; margin-inline: auto; padding-inline: 1rem; }
+@media (min-width: 768px) { .kap { padding-inline: 2rem; } }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 1.5rem; border-radius: 999px; background: var(--vurgu); color: var(--vurgu-ustu); font-weight: 600; text-decoration: none; transition: transform 120ms cubic-bezier(0.16, 1, 0.3, 1); }
+.btn:active { transform: translateY(1px); }
+.btn--acik { background: transparent; color: var(--murekkep); box-shadow: inset 0 0 0 1.5px var(--murekkep); }
+
+.giris { padding-block: 3rem 4rem; }
+.giris .kap { display: grid; gap: 1.5rem; }
+.giris small { font-size: 0.9375rem; color: var(--soluk); }
+.giris h1 { font-size: clamp(2.75rem, 1.6rem + 4.2vw, 5.75rem); max-width: 16ch; }
+.giris .lead { font-size: clamp(1.125rem, 1rem + 0.4vw, 1.375rem); max-width: 46ch; color: var(--soluk); }
+.eylem { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center; }
+
+.neden { background: var(--yuzey); padding-block: 4rem; }
+.neden .kap { display: grid; gap: 2rem; }
+.neden h2 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem); max-width: 20ch; }
+.olgular { margin: 0; padding: 0; list-style: none; display: grid; gap: 1.5rem 3rem; }
+.olgular li { display: grid; gap: 0.375rem; padding-top: 1rem; border-top: 1px solid var(--cizgi); }
+.olgular b { font: 400 clamp(1.375rem, 1.1rem + 0.8vw, 1.75rem)/1.15 var(--bas); }
+.olgular span { color: var(--soluk); }
+@media (min-width: 900px) { .olgular { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.katalog { padding-block: 5rem; }
+.katalog .kap { display: grid; gap: 3rem; }
+.katalog-bas { display: grid; gap: 0.75rem; max-width: 60ch; }
+.katalog-bas h2 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem); }
+.katalog-bas p { color: var(--soluk); }
+.tasarimlar { margin: 0; padding: 0; list-style: none; display: grid; gap: 3.5rem 2.5rem; }
+@media (min-width: 900px) { .tasarimlar { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tasarim { display: grid; gap: 1rem; align-content: start; }
+@media (min-width: 900px) { .tasarim:first-child { grid-column: 1 / -1; } .tasarim:first-child .goruntu { grid-template-columns: minmax(0, 3.2fr) minmax(0, 1fr); max-width: 980px; } }
+.goruntu { display: grid; grid-template-columns: minmax(0, 3.2fr) minmax(0, 1fr); gap: 0.625rem; align-items: end; }
+.tasarim h3 { font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem); }
+.tasarim p { color: var(--soluk); max-width: 52ch; }
+.tasarim .btn { justify-self: start; }
+
+.icerik { background: var(--murekkep); color: var(--kagit); padding-block: 5rem; }
+.icerik .kap { display: grid; gap: 2.5rem; }
+@media (min-width: 900px) { .icerik .kap { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 4rem; } }
+.icerik h2 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem); }
+.ozellik { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.25rem 2rem; }
+@media (min-width: 640px) { .ozellik { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ozellik li { padding-block: 0.75rem; border-top: 1px solid var(--cizgi-acik); }
+.icerik :focus-visible { outline-color: var(--vurgu-ustu); }
+
+.adim { padding-block: 5rem; }
+.adim .kap { display: grid; gap: 3rem; }
+@media (min-width: 900px) { .adim .kap { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4rem; } }
+.adim h2 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem); margin-bottom: 1.5rem; }
+.adim ol, .adim ul { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.875rem; }
+.adim li::marker { font-family: var(--bas); color: var(--vurgu); }
+.adim li b { display: block; }
+.adim li span { color: var(--soluk); }
+
+.kapanis { background: var(--yuzey); padding-block: 5rem; }
+.kapanis .kap { display: grid; gap: 1.25rem; justify-items: start; }
+.kapanis h2 { font-size: clamp(2.25rem, 1.5rem + 3vw, 4rem); max-width: 18ch; }
+.kapanis p { color: var(--soluk); max-width: 52ch; }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:active { transform: none; } }
+.alt { padding-block: 2rem 3rem; font-size: 0.9375rem; color: var(--soluk); }
+</style>
+</head>
+<body>
+<main>
+  <section class="giris" aria-labelledby="baslik">
+    <div class="kap">
+      <h1 id="baslik">BellaWera’nın sitesi için üç hazır tasarım</h1>
+      <p class="lead">Google profilinizde site adresinin yerinde Instagram duruyor. Bu tasarımlardan biri, randevuyu WhatsApp’a hazır mesajla getiren siteniz olabilir.</p>
+      <div class="eylem"><a class="btn" href="#tasarimlar">Tasarımlara bakın</a><a class="btn btn--acik" href="#nasil">Nasıl ilerleriz?</a></div>
+    </div>
+  </section>
+
+  <section class="neden" aria-labelledby="neden-baslik">
+    <div class="kap">
+      <h2 id="neden-baslik">Sizi arayan bulur; site olunca randevuya da dönüşür</h2>
+      <ul class="olgular">
+        <li><b>Google’da 5,0 puan, 114 yorum</b><span>Profiliniz çok güçlü, ama ziyaretçiyi gönderecek bir site yok.</span></li>
+        <li><b>Ücretsiz detaylı analiz</b><span>Instagram’daki bu teklifiniz sitede de var; müşteri tek dokunuşla ister.</span></li>
+        <li><b>Hizmet, gün, saat yazılı mesaj</b><span>Müşteri seçer; WhatsApp’ınıza ne istediği yazılı olarak gelir.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="katalog" id="tasarimlar" aria-labelledby="katalog-baslik">
+    <div class="kap">
+      <div class="katalog-bas">
+        <h2 id="katalog-baslik">Üç tasarım, hepsi BellaWera’nın bilgileriyle</h2>
+        <p>Hepsi çalışıyor: seçimleri deneyin, WhatsApp düğmesine dokunun, telefonda açın. Fotoğraflar geçici; sizinkilerle değişir.</p>
+      </div>
+      <ul class="tasarimlar">
+        <li class="tasarim"><div class="goruntu"><img src="img/takvim-masaustu.jpg" alt="Takvim tasarımı: siyah panoda BellaWera duvar takvimi, bugünün yaprağında randevu saatleri" width="960" height="600" loading="lazy"><img src="img/takvim-telefon.jpg" alt="Takvim tasarımı telefonda" width="390" height="844" loading="lazy"></div><h3>Takvim</h3><p>Önerdiğimiz tasarım: saatli maarif takvimi, panosu sizin siyah ve altınınızda. Bugünün yaprağında randevu saatleri; yaprağı koparınca ertesi gün, pazar kendiliğinden atlanır.</p><a class="btn" href="yonler/takvim/">Takvim’i açın</a></li>
+        <li class="tasarim"><div class="goruntu"><img src="img/net-masaustu.jpg" alt="Net tasarımı: sade başlık ve yüz bakımı fotoğrafı" width="960" height="600" loading="lazy"><img src="img/net-telefon.jpg" alt="Net tasarımı telefonda" width="390" height="844" loading="lazy"></div><h3>Net</h3><p>En sade yol: ihtiyaca göre hizmet seçici, randevu formu, sorular, adres.</p><a class="btn" href="yonler/net/">Net’i açın</a></li>
+        <li class="tasarim"><div class="goruntu"><img src="img/isik-masaustu.jpg" alt="Işık tasarımı: gün batımı gökyüzü ve kemerli portre" width="960" height="600" loading="lazy"><img src="img/isik-telefon.jpg" alt="Işık tasarımı telefonda" width="390" height="844" loading="lazy"></div><h3>Işık</h3><p>Akşamüstü ışığı; günün saatleri tek çizgide, koyu temada güneş batar, ay doğar.</p><a class="btn" href="yonler/isik/">Işık’ı açın</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="icerik" aria-labelledby="icerik-baslik">
+    <div class="kap">
+      <h2 id="icerik-baslik">Her tasarımda olanlar</h2>
+      <ul class="ozellik">
+        <li>WhatsApp’a hizmet, gün ve saatle hazır mesaj</li>
+        <li>Randevu numaranız, tek dokunuşla arama</li>
+        <li>Adres ve Google Haritalar yol tarifi</li>
+        <li>Pazartesi-cumartesi 09.30-19.00 ve canlı açık / kapalı durumu</li>
+        <li>Google puanınıza ve Instagram hesabınıza bağlantı</li>
+        <li>Google için doğru yapı: başlık, açıklama, işletme şeması</li>
+        <li>Telefonda hızlı açılış, açık ve koyu tema</li>
+        <li>Çerez ve izleme kodu yok</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="adim" id="nasil" aria-labelledby="nasil-baslik">
+    <div class="kap">
+      <div>
+        <h2 id="nasil-baslik">Nasıl ilerleriz?</h2>
+        <ol>
+          <li><b>Tasarımı seçersiniz</b></li>
+          <li><b>Fotoğraf ve bilgileri gönderirsiniz</b></li>
+          <li><b>Site kendi adresinizde yayına girer</b></li>
+          <li><b>Google profilinize site adresi eklenir</b><span>Yorumları okuyan müşteri doğrudan sitenize gelir.</span></li>
+        </ol>
+      </div>
+      <div>
+        <h2>Sizden istenecekler</h2>
+        <ul>
+          <li>Salonun ve uygulamaların fotoğrafları</li>
+          <li>Uygulamaları yapan uzmanların adları ve belgeleri</li>
+          <li>Fiyatlar ve süren kampanyalar (isteğe bağlı)</li>
+          <li>Logo dosyası</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="kapanis" aria-labelledby="kapanis-baslik">
+    <div class="kap">
+      <h2 id="kapanis-baslik">Beğendiğiniz tasarımın adını yazmanız yeterli</h2>
+      <p>Bu bağlantıyı size gönderen kişiye tasarımın adını (örneğin “Takvim”) yazın; fotoğraflarınızla yayına hazırlayalım.</p>
+      <a class="btn" href="#tasarimlar">Tasarımlara dönün</a>
+    </div>
+  </section>
+</main>
+<footer class="alt"><div class="kap"><p>BellaWera Güzellik Merkezi, Merkezefendi/Denizli için hazırlandı. Ön tasarımlar arama motorlarına kapalıdır; fotoğraflar geçicidir. Çerez ve izleme kodu yok.</p></div></footer>
+</body>
+</html>
