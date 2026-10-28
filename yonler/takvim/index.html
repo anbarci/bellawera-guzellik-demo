@@ -137,6 +137,7 @@ svg.i { width: 1.125rem; height: 1.125rem; flex: none; }
 .saat[aria-pressed="true"] small { color: var(--color-leaf); }
 .saat:focus-visible { outline: 3px solid var(--color-leaf-ink); outline-offset: 2px; position: relative; z-index: 1; }
 @media (max-width: 40rem) { .saat small { display: none; } }
+@media (max-width: 22.5rem) { .saatler { grid-template-columns: repeat(3, minmax(0, 1fr)); } .saatler li { border-bottom: 1px solid var(--color-leaf-rule); } .saatler li:nth-child(3) { border-right: 0; } }
 .saat:disabled { opacity: 0.55; cursor: not-allowed; text-decoration: line-through; }
 .yaprak-not { font-size: var(--text-sm); color: var(--color-leaf-muted); text-align: center; min-height: 1.5em; }
 .pano-eylem { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-sm); }

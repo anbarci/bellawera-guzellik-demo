@@ -121,6 +121,7 @@ svg.i { width: 1.125rem; height: 1.125rem; flex: none; }
 .tema-simge { display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; background: transparent; color: var(--color-ink); cursor: pointer; }
 .tema-simge[hidden] { display: none; }
 @media (max-width: 60rem) { .menu a.bag { display: none; } .menu .btn { padding-inline: var(--space-md); } }
+@media (max-width: 22.5rem) { .menu { gap: var(--space-sm); } }
 
 .sayac { padding-block: var(--space-xl) var(--space-2xl); -webkit-mask-image: linear-gradient(to bottom, var(--color-ink) 82%, transparent); mask-image: linear-gradient(to bottom, var(--color-ink) 82%, transparent); }
 .sayac .container { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gap-columns); row-gap: var(--space-xl); align-items: center; min-height: calc(100svh - 68px - 40px - var(--space-xl) - var(--space-2xl)); }
@@ -214,6 +215,7 @@ address { font-style: normal; color: var(--color-ink-2); }
 .cubuk { position: fixed; inset: auto 0 0 0; z-index: var(--z-sticky); display: flex; gap: var(--space-xs); padding: var(--space-xs) var(--space-md) calc(var(--space-xs) + env(safe-area-inset-bottom)); background: var(--color-paper); border-top: var(--rule-hair) solid var(--color-ink); transition: transform var(--dur-short) var(--ease-out); }
 .cubuk .btn { flex: 1; }
 .cubuk .btn:last-child { flex: none; }
+@media (max-width: 22.5rem) { .cubuk .btn { padding-inline: var(--space-sm); } }
 .cubuk.gizle { transform: translateY(110%); }
 @media (min-width: 60rem) { .cubuk { display: none; } }
 </style>
@@ -297,7 +299,7 @@ address { font-style: normal; color: var(--color-ink-2); }
           <a class="yaz" href="https://wa.me/905319651385?text=Merhaba%2C%20lazer%20epilasyon%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20B%C3%B6lge%3A%20">Lazer için WhatsApp’tan sor</a>
         </article>
         <article class="karo k-5 k-uzun" id="incelme">
-          <figure class="foto" data-slot="incelme"><img src="https://images.unsplash.com/photo-1768479619859-8ee2556a04b1?auto=format&amp;fit=crop&amp;w=800&amp;h=1000&amp;q=70" alt="Belini mezurayla ölçen kadın" width="800" height="1000" loading="lazy"></figure>
+          <figure class="foto" data-slot="incelme"><img src="https://images.unsplash.com/photo-1633009824314-c9095d90a9e6?auto=format&amp;fit=crop&amp;w=800&amp;h=1000&amp;q=70" alt="Pembe zeminde kıvrılmış bir mezura" width="800" height="1000" loading="lazy"></figure>
           <h3>Bölgesel incelme</h3>
           <p>Bel, karın ve basen için bölgeye özel seanslar.</p>
           <a class="yaz" href="https://wa.me/905319651385?text=Merhaba%2C%20b%C3%B6lgesel%20incelme%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20B%C3%B6lge%3A%20">İncelme için WhatsApp’tan sor</a>
@@ -351,7 +353,7 @@ address { font-style: normal; color: var(--color-ink-2); }
   </section>
 
   <figure class="raf" data-slot="mekan">
-    <img src="https://images.unsplash.com/photo-1619607146034-5a05296c8f9a?auto=format&amp;fit=crop&amp;w=1920&amp;h=823&amp;q=70" srcset="https://images.unsplash.com/photo-1619607146034-5a05296c8f9a?auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=70 960w, https://images.unsplash.com/photo-1619607146034-5a05296c8f9a?auto=format&amp;fit=crop&amp;w=1920&amp;h=823&amp;q=70 1920w" sizes="100vw" width="1920" height="823" alt="Altın üçgen raflarda sıra sıra oje şişeleri" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1676536162793-faa565d976d4?auto=format&amp;fit=crop&amp;w=1920&amp;h=823&amp;q=70" srcset="https://images.unsplash.com/photo-1676536162793-faa565d976d4?auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=70 960w, https://images.unsplash.com/photo-1676536162793-faa565d976d4?auto=format&amp;fit=crop&amp;w=1920&amp;h=823&amp;q=70 1920w" sizes="100vw" width="1920" height="823" alt="Bej duvarda ışıklı kemer raf, iki yanında saksı bitkileri" loading="lazy">
   </figure>
 
   <section class="bolum" id="sorular" aria-labelledby="sorular-baslik">

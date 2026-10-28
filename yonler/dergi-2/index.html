@@ -172,6 +172,7 @@ svg.i { width: 1.125rem; height: 1.125rem; flex: none; }
     linear-gradient(var(--color-mark), var(--color-mark)) 100% calc(100% - var(--o)) / var(--l) 1px no-repeat,
     linear-gradient(var(--color-mark), var(--color-mark)) calc(100% - var(--o)) 100% / 1px var(--l) no-repeat; }
 .crop--genis { --l: 14px; --o: 20px; }
+@media (max-width: 40rem) { .crop--genis { --o: 12px; } }
 
 .btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs); min-height: 48px; padding: 0 var(--space-lg); border: var(--rule-hair) solid var(--color-ink); border-radius: 2px; background: transparent; color: var(--color-ink); font: 500 var(--text-md)/1 var(--font-body); text-decoration: none; white-space: nowrap; cursor: pointer; transition: background-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
 .btn::after { content: ""; position: absolute; inset: 2px; border: var(--rule-hair) solid var(--color-mark); border-radius: 1px; pointer-events: none; }
@@ -317,7 +318,7 @@ legend { padding: 0; margin-bottom: var(--space-xs); font: 500 var(--text-sm)/1 
         <div class="olcu" data-olcu><h1 id="baslik">Denizli’de sonbahar, lazerin mevsimi</h1></div>
         <p class="lead">Altıntop’ta lazer, cilt bakımı, kirpik ve kaş. Fişi doldurun, WhatsApp’a gitsin.</p>
       </div>
-      <form class="fis crop crop--genis" id="fis" aria-labelledby="fis-baslik" data-fis data-cubuk-gizle>
+      <form class="fis crop crop--genis" id="fis" aria-labelledby="fis-baslik" data-fis>
         <div class="fis-ust"><h2 id="fis-baslik">Randevu fişi</h2><span class="small">Pazartesi-cumartesi 09.30-19.00</span></div>
         <fieldset><legend>Uygulama</legend>
           <div class="secim">
@@ -345,7 +346,7 @@ legend { padding: 0; margin-bottom: var(--space-xs); font: 500 var(--text-sm)/1 
         </fieldset>
         <p class="mesaj"><small>WhatsApp’ta açılacak mesaj</small><output data-mesaj>Merhaba, bugün sabah lazer epilasyon için randevu almak istiyorum.</output></p>
         <div class="fis-alt">
-          <a class="btn btn--primary" data-gonder href="https://wa.me/905319651385?text=Merhaba%2C%20bug%C3%BCn%20sabah%20lazer%20epilasyon%20i%C3%A7in%20randevu%20almak%20istiyorum."><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp’a gönder</a>
+          <a class="btn btn--primary" data-gonder data-cubuk-gizle href="https://wa.me/905319651385?text=Merhaba%2C%20bug%C3%BCn%20sabah%20lazer%20epilasyon%20i%C3%A7in%20randevu%20almak%20istiyorum."><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp’a gönder</a>
           <p class="small">ya da <a href="tel:+905319651385">0531 965 13 85</a></p>
         </div>
       </form>
@@ -389,7 +390,7 @@ legend { padding: 0; margin-bottom: var(--space-xs); font: 500 var(--text-sm)/1 
         </article>
         <article class="sayfa crop" aria-labelledby="s-zayif">
           <h3 id="s-zayif">Bölgesel incelme</h3>
-          <dl class="set"><div><dt>Bölgeler</dt><dd>Bel, karın, basen</dd></div><div><dt>Yöntem</dt><dd>Cihazlı seanslar, paket olarak</dd></div></dl>
+          <dl class="set"><div><dt>Bölgeler</dt><dd>Bel, karın, basen</dd></div><div><dt>Yöntem</dt><dd>Bölgeye özel seans planı</dd></div></dl>
           <a class="sor" href="https://wa.me/905319651385?text=Merhaba%2C%20b%C3%B6lgesel%20incelme%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20B%C3%B6lge%3A%20">Bölgesel incelmeyı sor</a>
         </article>
         <article class="sayfa crop" aria-labelledby="s-catlak">

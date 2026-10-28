@@ -54,7 +54,7 @@
     const io = new IntersectionObserver(girdiler => {
       girdiler.forEach(g => g.isIntersecting ? gorunen.add(g.target) : gorunen.delete(g.target));
       cubuk.classList.toggle('gizle', gorunen.size > 0);
-    }, { rootMargin: '-1px 0px 0px 0px' });
+    }, { rootMargin: '-1px 0px -72px 0px' });
     document.querySelectorAll('[data-cubuk-gizle]').forEach(el => io.observe(el));
   }
 

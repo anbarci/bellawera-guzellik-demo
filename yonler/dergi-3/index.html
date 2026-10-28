@@ -276,6 +276,7 @@ address { font-style: normal; font-size: max(1rem, 3.1cqw); color: var(--color-i
 .arka h2 { color: var(--color-paper); font-size: 11.5cqw; white-space: nowrap; margin-top: auto; }
 .arka h2 a { text-decoration: none; }
 .arka .eylem { display: flex; flex-wrap: wrap; gap: 2.4cqw; }
+@media (max-width: 22.5rem) { .arka .eylem .btn { padding-inline: var(--space-sm); } }
 
 .kumanda { display: none; }
 .masa-not { display: none; }
@@ -291,6 +292,7 @@ html:not(.kitap-acik) #sayfa-5 { margin-top: calc(-1 * var(--space-xl)); min-hei
 .cubuk { position: fixed; inset: auto 0 0 0; z-index: var(--z-sticky); display: flex; gap: var(--space-xs); padding: var(--space-xs) var(--space-md) calc(var(--space-xs) + env(safe-area-inset-bottom)); background: var(--color-paper); border-top: 1px solid var(--color-rule); transition: transform var(--dur-short) var(--ease-out); }
 .cubuk .btn { flex: 1; }
 .cubuk .btn--cizgi { flex: none; }
+@media (max-width: 22.5rem) { .cubuk .btn { padding-inline: var(--space-sm); } }
 .cubuk.gizle { transform: translateY(110%); }
 @media (min-width: 60rem) { .cubuk { display: none; } }
 
@@ -382,7 +384,7 @@ html:not(.kitap-acik) #sayfa-5 { margin-top: calc(-1 * var(--space-xl)); min-hei
     <section class="sayfa" id="sayfa-6" aria-labelledby="vucut-baslik">
       <div class="ic">
         <h2 id="vucut-baslik">Vücut, kısa kısa</h2>
-        <div class="kisa"><h3>Bölgesel incelme</h3><p>Bel, karın ve basende cihazlı seanslar. Hangi bölge için kaç seans önerildiğini sorun.</p><a class="sor" href="https://wa.me/905319651385?text=Merhaba%2C%20b%C3%B6lgesel%20incelme%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20B%C3%B6lge%3A%20">İncelmeyi sor</a></div>
+        <div class="kisa"><h3>Bölgesel incelme</h3><p>Bel, karın ve basen için bölgeye özel seanslar. Hangi bölge için kaç seans önerildiğini sorun.</p><a class="sor" href="https://wa.me/905319651385?text=Merhaba%2C%20b%C3%B6lgesel%20incelme%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20B%C3%B6lge%3A%20">İncelmeyi sor</a></div>
         <div class="kisa"><h3>Sırt bakımı</h3><p>Sırt bölgesine derin temizlik ve bakım; kendi ulaşamadığınız bölge uzman elinde.</p><a class="sor" href="https://wa.me/905319651385?text=Merhaba%2C%20s%C4%B1rt%20bak%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Sırt bakımını sor</a></div>
         <p class="folyo"><span>6</span><span>Bella, sonbahar 2026</span></p>
       </div>

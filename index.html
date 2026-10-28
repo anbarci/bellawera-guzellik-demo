@@ -75,6 +75,7 @@ img { display: block; max-width: 100%; height: auto; border-radius: 6px; box-sha
 @media (min-width: 900px) { .tasarimlar { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .tasarim { display: grid; gap: 1rem; align-content: start; }
 .goruntu { display: grid; grid-template-columns: minmax(0, 3.2fr) minmax(0, 1fr); gap: 0.625rem; align-items: end; }
+@media (max-width: 37.5rem) { .goruntu { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); } }
 .tasarim h3 { font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem); }
 .tasarim p { color: var(--soluk); max-width: 52ch; }
 .tasarim .btn { justify-self: start; }

@@ -190,6 +190,7 @@ svg.i { width: 1.25rem; height: 1.25rem; flex: none; }
 @media (min-width: 1000px) { .cikartma.yildiz { top: auto; bottom: 1.5rem; right: 1.5rem; width: 8rem; height: 8rem; } }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) { .kutu:hover .cikartma { transform: rotate(6deg) scale(1.06); } }
 .kutu h2 { font-size: clamp(2.25rem, 1.75rem + 2vw, 3.5rem); max-width: 9ch; }
+@media (max-width: 22.5rem) { .kutu h2 { font-size: 1.875rem; } }
 .kutu:has(.cikartma) h2 { padding-right: 4rem; max-width: none; }
 @media (min-width: 1280px) { .k-3 h2, .k-4 h2 { font-size: clamp(2rem, 1rem + 1.5vw, 2.75rem); } }
 .kutu .kisa { font-weight: 500; max-width: 28ch; }
@@ -271,7 +272,7 @@ p, li { text-wrap: pretty; }
     </article>
 
     <article class="kutu yesil k-4" aria-labelledby="h-zayif">
-      <span class="cikartma" aria-hidden="true">Cihazlı seans</span>
+      <span class="cikartma" aria-hidden="true">Bölgeye özel</span>
       <h2 id="h-zayif">Bölgesel incelme</h2>
       <p class="kisa">Bel, karın, basen. Hangi bölge, kaç seans: mesajla sor.</p>
       <a class="dugme" href="https://wa.me/905319651385?text=Merhaba%2C%20b%C3%B6lgesel%20incelme%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20B%C3%B6lge%3A%20"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>İncelme için yaz</a>
@@ -285,7 +286,7 @@ p, li { text-wrap: pretty; }
     <article class="kutu turuncu k-5" aria-labelledby="h-cilt">
       <span class="cikartma" aria-hidden="true">Analiz ücretsiz</span>
       <h2 id="h-cilt">Cilt bakımı</h2>
-      <p class="kisa">Cilt tipine göre temizlik ve bakım. Bitkisel peeling de var.</p>
+      <p class="kisa">Cilt tipine göre temizlik ve bakım.</p>
       <a class="dugme" href="https://wa.me/905319651385?text=Merhaba%2C%20cilt%20bak%C4%B1m%C4%B1%20i%C3%A7in%20randevu%20almak%20istiyorum."><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Cilt bakımı için yaz</a>
     </article>
 
@@ -310,7 +311,7 @@ p, li { text-wrap: pretty; }
     </article>
 
     <article class="kutu pembe k-3" aria-labelledby="h-catlak">
-      <span class="cikartma" aria-hidden="true">Rengine göre</span>
+      <span class="cikartma" aria-hidden="true">Derin temizlik</span>
       <h2 id="h-catlak">Sırt bakımı</h2>
       <p class="kisa">Sırt bölgesine derin temizlik ve bakım.</p>
       <a class="dugme" href="https://wa.me/905319651385?text=Merhaba%2C%20s%C4%B1rt%20bak%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>Sırt bakımı için yaz</a>
